@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese Memorization</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="#" id="home-link">Home</a>
+        <div id="logo">
+          <img src="MEMO.png" alt="memori">
+        </div>
+        <a href="#" id="practice-link">Practice</a>
+        <div class="navbar-toggle" id="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="navbar-menu" id="navbar-menu">
+          <a href="#" id="home-link-menu">Home</a>
+          <a href="#" id="practice-link-menu">Practice</a>
+        </div>
+      </nav>
+      
+  <main>
+    <div id="home" class="content active">
+      <h1>Japanese Characters</h1>
+      <select id="character-type-select">
+        <option value="hiragana">Hiragana</option>
+        <option value="katakana">Katakana</option>
+      </select>
+      <div id="character-grid" class="grid"></div>
+    </div>
+    <div id="practice" class="content">
+      <h1>Practice Character</h1>
+      <div id="practice-card" class="card"></div>
+      <input type="text" id="answer-input" placeholder="Enter the meaning">
+      <button id="submit-btn">Submit</button>
+      <button id="next-btn">Next</button>
+      <div id="feedback"></div>
+      <div id="score">Score: 0</div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

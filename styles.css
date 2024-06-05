@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  nav {
+    background-color: #ff7f50;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #logo {
+    flex: 1; /* Ocupa todo o espaço disponível no meio */
+    text-align: center; /* Alinha o logotipo ao centro */
+  }
+  
+  #logo img {
+    max-width: 200px; /* Ajuste o tamanho máximo conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+  }
+  
+  .navbar-menu.active {
+    display: flex;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .navbar-toggle span {
+    background: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      width: 100%;
+    }
+  
+    .navbar-toggle {
+      display: flex;
+    }
+  }
+  
+  .content {
+    display: none;
+    padding: 20px;
+  }
+  
+  .content.active {
+    display: block;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h2 {
+    color: #ff7f50;
+  }
+  
+  .card p {
+    margin: 5px 0;
+  }
+  
+  #practice-card {
+    margin: 20px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  #practice-card.flip {
+    transform: rotateY(360deg);
+  }
+  
+  #answer-input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #ff7f50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e67348;
+  }
+  
+  #feedback {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  #score {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #ff7f50;
+  }
+  
